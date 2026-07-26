@@ -1,26 +1,22 @@
-# **Stock Ticker Info**
+# StockTickerInfo
 
-This project features a graphical user interface (GUI) built with Tkinter that allows users to input a stock ticker symbol. Upon submitting the ticker, the application uses Selenium WebDriver for Chrome to scrape the stock's full name and display it back in the GUI.
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge)
+![Selenium](https://img.shields.io/badge/Selenium-43B02A?logo=selenium&logoColor=white&style=for-the-badge)
 
-![Python Badge](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Selenium Badge](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
-![Tkinter Badge](https://img.shields.io/badge/Tkinter-008080?style=for-the-badge&logo=python&logoColor=white)
+## About
+
+**StockTickerInfo** is a desktop utility that lets users look up a stock's full company name by entering its ticker symbol. Built with **Python**, it provides a **Tkinter** GUI for input and uses **Selenium WebDriver** to scrape the corresponding company name from the web, displaying the result back in the window without leaving the app.
 
 ## Features
 
-- **Ticker Input**: Users can enter a stock ticker symbol into a text field.
-- **Web Scraping**: Selenium WebDriver is used to scrape the full name of the stock associated with the entered ticker symbol.
-- **User Interface**: Built with Tkinter, the GUI displays the stock's full name once the submit button is pressed.
+- Simple Tkinter GUI with a text field for ticker symbol input and a submit button
+- Selenium WebDriver automates a Chrome browser to scrape the company name for the entered ticker
+- Displays the resolved company name directly in the GUI after submission
+- Lightweight single-file application with no external API keys required
+- Headless-friendly Chrome automation via ChromeDriver
 
 ## Technology Stack
 
-- **Frontend**: Tkinter (Python GUI)
-- **Web Scraping**: Selenium WebDriver (for Chrome)
-- **Web Driver**: ChromeDriver
-
-## How it Works
-
-1. **Tkinter GUI**: The user interacts with the GUI to input a stock ticker symbol and press a submit button.
-2. **Selenium WebDriver**: Upon submission, the application initiates a web scraping process using Selenium WebDriver for Chrome. The driver opens a browser and queries a stock information website.
-3. **Data Extraction**: The full name of the stock is extracted from the webpage.
-4. **Displaying Results**: The stock's full name is displayed back in the Tkinter window for the user to see.
+- **Language**: Python
+- **GUI**: Tkinter
+- **Web Scraping**: Selenium WebDriver, ChromeDriver
